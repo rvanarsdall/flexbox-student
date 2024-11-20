@@ -1,0 +1,33 @@
+/* .box {
+  width: 100px;
+  height: 100px;
+} */
+
+.red {
+    background-color: red;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+
+  code {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+  }
+
+
+
+  ul li code {
+    font-size: 0.9em;
+  }

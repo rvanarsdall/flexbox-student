@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>CSS Flexbox</h1>
+    <p>
+      Flexbox is a powerful tool for website layouts. You do not need to
+      memorize anything. Remember you are developers! You can always reference
+      documentation. No one is going to expect you to know everything. They will
+      expect you know where to find the information and follow the patterns.
+    </p>
+    <h4>Useful Links on Flexbox</h4>
+    <ul>
+      <li>
+        <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank"
+          >W3 Schools</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+          target="_blank"
+          >CSS Tricks</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"
+          target="_blank"
+          >Interactive Guide</a
+        >
+      </li>
+      <li>
+        <a href="https://flexboxfroggy.com/" target="_blank"
+          >Flexbox Froggie - Game</a
+        >
+      </li>
+    </ul>
+    <article>
+      <!-- ! FLEX DIRECTION -->
+      <h3>FlexBox: Flex Direction</h3>
+      <p>
+        The <code>flex-direction</code> property specifies the direction of the
+        flexible items. By default, the flex items are laid out in a row. It can
+        be confusing because to us they appear as columns.
+      </p>
+      <p>
+        There will be times that you would want it to be set to column and still
+        take advantage of <code>flex-direction: column</code>
+      </p>
+      <div class="example-1-container flex">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <h3>Example of Flex Direction Column</h3>
+      <div class="example-1-container flex-column">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <!-- ! END OF FLEX DIRECTION -->
+    </article>
+
+    <article>
+      <!-- ! FLEX BASIS -->
+      <h3>Flex Basis</h3>
+      <p>
+        The <code>flex-basis</code> property specifies the initial main size of
+        a flex item. It sets the size of the content box unless otherwise set
+        with box-sizing.
+      </p>
+
+      <p>
+        You will see that it does matter if you set the
+        <code>flex-direction</code> to row or column.
+      </p>
+
+      <div class="example-2-container flex flex-basis">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <h3>Example of Flex Basis Column</h3>
+      <div class="example-2-container flex flex-column flex-basis">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <!-- ! End of FLEX BASIS -->
+    </article>
+
+    <article>
+      <!-- ! FLEX Layouts -->
+      <h3>Flex Layouts</h3>
+      <p>
+        It's really important to know the difference between the Parent Element
+        vs the Child Elements. And what property goes where. Somethings go on
+        the Parent Container and others will go on the Child Items.
+      </p>
+    </article>
+
+    <article>
+      <!-- !Flex order -->
+      <h4>Flex Order</h4>
+      <p>
+        The <code>order</code> property specifies the order of a flexible item
+        relative to the rest of the flex items inside the same container.
+        <strong>This property should go on the Parent</strong>
+      </p>
+      <h5>Original Order</h5>
+      <div class="example-3-container flex">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <h5>Altered Order</h5>
+      <div class="example-3-container flex flex-order">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <!-- !End of Flex Order -->
+    </article>
+
+    <article>
+      <!-- !Flex Wrap -->
+      <h4>Flex Wrap</h4>
+      <p>
+        By default the flex items will try to fit all in one row. But if you
+        want them to wrap you can use the <code>flex-wrap</code> property.
+      </p>
+
+      <h5>Original Wrap</h5>
+      <div class="example-4-container flex">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <h5>With Wrap</h5>
+      <div class="example-4-container flex flex-wrap">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <!-- !End of Flex Wrap -->
+    </article>
+
+    <article>
+      <!-- JUSTIFY CONTENT -->
+      <h4>Justify Content</h4>
+      <p>
+        The <code>justify-content</code> property aligns the flexible
+        container's items when the items do not use all available space on the
+        main-axis.
+      </p>
+      <h5>Possible Values</h5>
+      <ul>
+        <li><code>flex-start</code></li>
+        <li><code>flex-end</code></li>
+        <li><code>center</code></li>
+        <li><code>space-between</code></li>
+        <li><code>space-around</code></li>
+      </ul>
+      <h5>Original Justify Content</h5>
+      <div class="example-5-container flex">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <h5>With Justify Content</h5>
+      <div class="example-5-container flex justify-content">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <!-- END OF JUSTIFY CONTENT -->
+    </article>
+
+    <article>
+      <!-- ! Align Items -->
+      <h4>Align Items</h4>
+      <p>
+        The <code>align-items</code> property specifies the default alignment
+        for items inside the flexible container.
+      </p>
+      <p>
+        To see this take effect we must provide a height or width to the cross
+        axis.
+      </p>
+      <h5>Possible Values</h5>
+      <ul>
+        <li><code>stretch</code></li>
+        <li><code>flex-start</code></li>
+        <li><code>flex-end</code></li>
+        <li><code>center</code></li>
+        <li><code>baseline</code></li>
+      </ul>
+
+      <h5>Original Align Items</h5>
+      <div class="example-6-container flex">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <h5>With Align Items</h5>
+      <div class="example-6-container flex align-items">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <!-- !End of Align Items -->
+    </article>
+
+    <article>
+      <!-- ! Flex Sizing -->
+      <h4>Flex Sizing</h4>
+      <p>
+        The <code>flex</code> property is a shorthand for the
+        <code>flex-grow</code>, <code>flex-shrink</code>, and the
+        <code>flex-basis</code> properties.
+      </p>
+      <p>These all can be handled under the <code>flex</code> property.</p>
+      <p><strong>This will go on the child elements.</strong></p>
+      <h5>Original Flex Sizing</h5>
+      <div class="example-7-container flex">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <h5>With Flex Sizing</h5>
+      <div class="example-7-container flex flex-sizing">
+        <div class="box red">Red</div>
+        <div class="box green">Green</div>
+        <div class="box blue">Blue</div>
+        <div class="box purple">Purple</div>
+      </div>
+      <!-- !End of Flex Sizing -->
+    </article>
+  </body>
+</html>
