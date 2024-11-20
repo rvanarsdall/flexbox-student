@@ -1,16 +1,13 @@
 /* TODO Add `display: flex` */
 .flex {
-  display: flex;
 }
 /* TODO: Add `flex-direction: column` */
 .flex-column {
-  flex-direction: column;
 }
 /* Note: Flex-basis can only be applied to children */
 /* flex-basis > * is selecting only the children elements of our container */
 /* TODO: add a flex basis of 100px */
 .flex-basis > * {
-  flex-basis: 100px;
 }
 
 /* Note: by default everything is given the order priority of zero
@@ -19,54 +16,43 @@ As long as it is a positive or negative number, it will be placed in the order y
 
 /* TODO: change the order property to 4 */
 .flex-order > .red {
-  order: 4;
 }
 
 /* ! Challenge: change the blue order to be on the left of the red */
 
 .example-4-container > * {
-  width: 200px;
 }
 /* Note: flex-wrap by default is set to nowrap */
 /* TODO: add flex-wrap: wrap */
 
 .flex-wrap {
-  flex-wrap: wrap;
 }
 
 /* Note: justify-content is used to align items on the main axis */
 /* TODO: Play around with the justify-content with the available properties values. */
 .justify-content {
-  justify-content: center;
 }
 
 /* Note: align-items we need to make sure the parent element has a height */
 
 .example-6-container {
-  height: 100px;
-  outline: 1px solid lightcoral;
 }
 
 /* TODO: Play around with align-items */
 
 .align-items {
-  align-items: center;
 }
 
 /* Note: If you only want one of the children to have a different alignment you can make that happen */
 /* TODO: Targeting the purple element give it a flex-start to the align-self */
 
 .align-items > .purple {
-  align-self: flex-start;
 }
-
 
 /* TODO: Make green take up 2 x the space  */
 
 .flex-sizing > * {
-    flex: 1;
 }
 
 .flex-sizing > .green {
-  flex: 2;
 }

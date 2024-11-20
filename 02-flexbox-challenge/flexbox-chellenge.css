@@ -1,52 +1,46 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
-h4, p{
-    margin:  0 10px;
-}
-button{
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-
+h4,
+p {
+  margin: 0 10px;
 }
 
-button:hover{
-    background-color: #555;
+/* TODO: set padding top and bottom 10px, left and right 20px */
+/* TODO: set border to none */
+/* TODO: set background-color to #333 */
+/* TODO: set border radius to 5px */
+/* TODO: set cursor to pointer */
+
+button {
+}
+/* TODO: set background color of the hover to #555 */
+button:hover {
 }
 
-
-.container{
-    display:flex;
-    justify-content: center;
-    
-    gap:40px;
+/* TODO: set display to flex, add a gap of 40px and justify the content to center */
+.container {
 }
 
-.product{
-    min-width: 200px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+/* TODO: 
+make display flex
+add a gap of 10px
+flex-direction to column
+align-items to center
+background color to #f4f4f4
+min-width to 200px
+*/
+.product {
+}
+/* TODO: display to flex to put the title and price on the same line and set the justify content to space between */
+.title {
 }
 
-.title{
-    display:flex;
-}
-
-.product img{
-    width: 100%;
-    border-radius: 10px;
+.product img {
+  width: 100%;
+  border-radius: 10px;
 }
